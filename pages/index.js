@@ -1,203 +1,187 @@
-import Head from 'next/head'
+import React from 'react';
+import {
+  Box,
+  Button,
+  Card,
+  Columns,
+  Column,
+  Container,
+  Heading,
+  Image,
+  LayoutSet,
+  Link,
+  List,
+  Paragraph,
+  Text
+} from 'fannypack';
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default function() {
+  return (
+    <Container isLayout fontSize="400">
+      <LayoutSet spacing="major-8" paddingY="major-6">
+        <Container breakpoint="tablet">
+          <LayoutSet spacing="major-2">
+            <Heading>Hey, I'm Jake 👋</Heading>
+            <Paragraph>
+              I am a web engineer who cares about accessible, performant, functional user experiences.
+            </Paragraph>
+            <Paragraph>
+              I am currently working on{' '}
+              <Link href="https://medipass.com.au" target="_blank" rel="noreferrer noopener">
+                Medipass
+              </Link>
+              , a health claiming and payments platform enabling health providers to spend less time managing payments,
+              and more time seeing patients.
+            </Paragraph>
+            <Paragraph>
+              You can find me working on{' '}
+              <Link href="https://github.com/jxom" target="_blank" rel="noreferrer noopener">
+                open-source
+              </Link>{' '}
+              in my spare time.
+            </Paragraph>
+            <Paragraph>
+              When I'm not coding, and just wanna chill out, you can find me heading to a{' '}
+              <Link href="https://youtu.be/43IcUCIHhQk?t=30" target="_blank" rel="noreferrer noopener">
+                festival of sorts
+              </Link>{' '}
+              or{' '}
+              <Link href="https://youtu.be/ieUgvsIVWNo?t=43" target="_blank" rel="noreferrer noopener">
+                a hardcore gig
+              </Link>
+              . My music choice is messed, I know lol.
+            </Paragraph>
+          </LayoutSet>
+        </Container>
+        <LayoutSet width="100%">
+          <Container breakpoint="tablet">
+            <Heading>Professional experience</Heading>
+          </Container>
+          <Container breakpoint="desktop" fontSize="200">
+            <Columns>
+              <Column>
+                <Card>
+                  <LayoutSet spacing="major-1">
+                    <Box>
+                      <Image src="/medipass-logo.svg" height="30px" />
+                    </Box>
+                    <Box>
+                      <Text fontWeight="semibold" fontSize="300">
+                        Lead frontend engineer
+                      </Text>
+                      <br />
+                      <Text color="text200" fontSize="150">
+                        DEC 2016 - PRESENT
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Link>See more...</Link>
+                    </Box>
+                  </LayoutSet>
+                </Card>
+              </Column>
+              <Column>
+                <Card>
+                  <LayoutSet spacing="major-1">
+                    <Box>
+                      <Image src="/localz.webp" height="30px" />
+                    </Box>
+                    <Box>
+                      <Text fontWeight="semibold" fontSize="300">
+                        Frontend engineer
+                      </Text>
+                      <br />
+                      <Text color="text200" fontSize="150">
+                        AUG 2015 - DEC 2016
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Link>See more...</Link>
+                    </Box>
+                  </LayoutSet>
+                </Card>
+              </Column>
+              <Column>
+                <Card>
+                  <LayoutSet spacing="major-1">
+                    <Box height="35px">
+                      <Image src="/suncorp.png" height="40px" />
+                    </Box>
+                    <Box>
+                      <Text fontWeight="semibold" fontSize="300">
+                        Frontend engineer
+                      </Text>
+                      <br />
+                      <Text color="text200" fontSize="150">
+                        DEC 2014 - FEB 2015
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Link>See more...</Link>
+                    </Box>
+                  </LayoutSet>
+                </Card>
+              </Column>
+            </Columns>
+          </Container>
+        </LayoutSet>
+        <LayoutSet width="100%">
+          <Container breakpoint="tablet">
+            <Heading>Featured projects</Heading>
+          </Container>
+          <Container breakpoint="desktop">
+            <Columns>
+              <Column spread={4}>
+                <Card>placeholder</Card>
+              </Column>
+              <Column spread={4}>
+                <Card>placeholder</Card>
+              </Column>
+              <Column spread={4}>
+                <Card>placeholder</Card>
+              </Column>
+              <Column spread={4}>
+                <Card>placeholder</Card>
+              </Column>
+              <Column spread={4}>
+                <Card>placeholder</Card>
+              </Column>
+              <Column spread={4}>
+                <Card>placeholder</Card>
+              </Column>
+            </Columns>
+          </Container>
+          <Container breakpoint="tablet">
+            <Link>See all...</Link>
+          </Container>
+        </LayoutSet>
+        <LayoutSet width="100%">
+          <Container breakpoint="tablet">
+            <LayoutSet spacing="major-2">
+              <Heading>Talks</Heading>
+              <List listStyleType="disc" listStylePosition="inside" marginLeft="major-2">
+                <List.Item>"Take a load off with React"</List.Item>
+                <List listStyleType="circle" listStylePosition="inside" marginLeft="major-4">
+                  <List.Item>ReactConf AU, 2020</List.Item>
+                  <List.Item>MelbJS, 2020</List.Item>
+                  <List.Item>ComponentsConf Meetup, 2019</List.Item>
+                </List>
+                <List.Item>"Hooked on Hooks"</List.Item>
+                <List listStyleType="circle" listStylePosition="inside" marginLeft="major-4">
+                  <List.Item>MelbJS, 2019</List.Item>
+                  <List.Item>
+                    <Link href="https://youtu.be/bkJ_SFhUrZ4?t=4260">React Melbourne, 2018</Link>
+                  </List.Item>
+                </List>
+                <List.Item>"Async/await in Node"</List.Item>
+                <List listStyleType="circle" listStylePosition="inside" marginLeft="major-4">
+                  <List.Item>Node Melbourne, 2017</List.Item>
+                </List>
+              </List>
+            </LayoutSet>
+          </Container>
+        </LayoutSet>
+      </LayoutSet>
+    </Container>
+  );
+}

@@ -1,15 +1,24 @@
 {
   "name": "jxom.io",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint ."
   },
   "dependencies": {
+    "emotion-server": "10.0.27",
+    "fannypack": "5.0.0-alpha.20",
     "next": "9.2.2",
     "react": "16.13.0",
     "react-dom": "16.13.0"
+  },
+  "devDependencies": {
+    "@medipass/eslint-config-react-medipass": "8.9.3",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-import": "2.20.1"
   }
 }
