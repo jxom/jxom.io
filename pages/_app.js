@@ -4,6 +4,9 @@ import Head from 'next/head';
 import { Provider as FannypackProvider, css, breakpoint, palette } from 'fannypack';
 
 const theme = {
+  breakpoints: {
+    mobile: 480
+  },
   global: {
     css: {
       root: styleProps => css`
@@ -29,10 +32,17 @@ const theme = {
         ${breakpoint(
           'mobile',
           css`
-            font-size: 2.5rem !important;
+            font-size: 1.75rem !important;
           `
         )(styleProps)};
       `
+    },
+    h1: {
+      css: {
+        root: css`
+          font-size: 2.5rem;
+        `
+      }
     }
   },
   Link: {
