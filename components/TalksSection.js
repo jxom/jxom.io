@@ -14,7 +14,9 @@ export default function TalksSection() {
               {'"'}
             </List.Item>
             <List listStyleType="circle" listStylePosition="inside">
-              <List.Item>ReactConf AU, 2020</List.Item>
+              <List.Item>
+                <Link href="https://youtu.be/XpdernT9E64">ReactConf AU, 2020</Link>
+              </List.Item>
               <List.Item>MelbJS, 2020</List.Item>
               <List.Item>ComponentsConf Meetup, 2019</List.Item>
             </List>
