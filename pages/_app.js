@@ -9,7 +9,7 @@ const theme = {
   },
   global: {
     css: {
-      root: styleProps => css`
+      root: css`
         html,
         body {
           background-color: #cfebff;
