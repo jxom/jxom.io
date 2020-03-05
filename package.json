@@ -11,8 +11,11 @@
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "5.12.1",
     "@fortawesome/free-solid-svg-icons": "5.12.1",
+    "dotenv": "8.2.0",
     "emotion-server": "10.0.27",
     "fannypack": "5.0.0-alpha.21",
+    "graphql-request": "1.8.2",
+    "isomorphic-unfetch": "3.0.0",
     "next": "9.2.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
