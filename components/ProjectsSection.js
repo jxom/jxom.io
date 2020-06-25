@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Card, Columns, Column, Container, Heading, Icon, LayoutSet, Link, Text } from 'fannypack';
+import { Box, Card, Columns, Column, Container, Heading, Icon, Stack, Link, Text } from 'fannypack';
 import { faStar } from '@fortawesome/free-solid-svg-icons/faStar';
 
 export default function ProjectsSection(props) {
@@ -8,7 +8,7 @@ export default function ProjectsSection(props) {
   const [viewAllRepos, setViewAllRepos] = React.useState(false);
 
   return (
-    <LayoutSet width="100%">
+    <Stack width="100%">
       <Container breakpoint="tablet">
         <Heading>Featured projects</Heading>
       </Container>
@@ -71,6 +71,6 @@ export default function ProjectsSection(props) {
           ...
         </Link>
       </Container>
-    </LayoutSet>
+    </Stack>
   );
 }

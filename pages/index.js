@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, LayoutSet } from 'fannypack';
+import { Container, Stack } from 'fannypack';
 import { GraphQLClient } from 'graphql-request';
 
 import AboutSection from '../components/AboutSection';
@@ -47,12 +47,12 @@ export default function Index(props) {
   const { repos } = props;
   return (
     <Container isLayout fontSize={{ default: '400', mobile: '300' }}>
-      <LayoutSet spacing="major-8" paddingY="major-6">
+      <Stack spacing="major-8" paddingY="major-6">
         <AboutSection />
         <ExperienceSection />
         <ProjectsSection repos={repos} />
         <TalksSection />
-      </LayoutSet>
+      </Stack>
     </Container>
   );
 }

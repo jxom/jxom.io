@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Heading, Icon, LayoutSet, Link, Paragraph, Set, fontSize, palette, styled } from 'fannypack';
+import { Box, Container, Heading, Icon, Stack, Link, Paragraph, Set, fontSize, palette, styled } from 'fannypack';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
@@ -15,7 +15,7 @@ const SocialIconLink = styled(Link)`
 export default function About() {
   return (
     <Container breakpoint="tablet">
-      <LayoutSet spacing="major-2">
+      <Stack spacing="major-2">
         <Set justifyContent="space-between" width="100%">
           <Box>
             <Heading marginBottom="0">
@@ -67,7 +67,7 @@ export default function About() {
           </Link>
           .
         </Paragraph>
-      </LayoutSet>
+      </Stack>
     </Container>
   );
 }

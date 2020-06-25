@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Heading, LayoutSet, Link, List } from 'fannypack';
+import { Container, Heading, Stack, Link, List } from 'fannypack';
 
 export default function TalksSection() {
   return (
-    <LayoutSet width="100%">
+    <Stack width="100%">
       <Container breakpoint="tablet">
-        <LayoutSet spacing="major-2">
+        <Stack spacing="major-2">
           <Heading>Talks</Heading>
           <List listStyleType="disc" listStylePosition="inside" marginLeft={{ 'min-tablet': 'major-2' }}>
             <List.Item>
@@ -40,8 +40,8 @@ export default function TalksSection() {
               <List.Item>Node Melbourne, 2017</List.Item>
             </List>
           </List>
-        </LayoutSet>
+        </Stack>
       </Container>
-    </LayoutSet>
+    </Stack>
   );
 }
