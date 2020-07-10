@@ -51,7 +51,7 @@ export default function About() {
           in my spare time. You
           {"'"}
           ll probably find me working on{' '}
-          <Link href="https://fannypack.style" target="_blank" rel="noreferrer noopener">
+          <Link href="https://v5.fannypack.style" target="_blank" rel="noreferrer noopener">
             Fannypack
           </Link>
           , a React UI Kit, which actually this site was made with.
