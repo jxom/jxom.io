@@ -1,6 +1,22 @@
 import React from 'react';
-import { Box, Card, Columns, Column, Container, Heading, Icon, Stack, Link, Text } from 'fannypack';
+import { Box, Card, Columns, Column, Container, Heading, Icon, Stack, Link, Text, applyTheme } from 'bumbag';
 import { faStar } from '@fortawesome/free-solid-svg-icons/faStar';
+
+const ProjectCard = applyTheme(Card, {
+  Content: {
+    styles: {
+      base: {
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
+      }
+    }
+  },
+  defaultProps: {
+    height: '230px'
+  }
+})
 
 export default function ProjectsSection(props) {
   const { repos } = props;
@@ -16,23 +32,7 @@ export default function ProjectsSection(props) {
         <Columns>
           {repos.slice(0, viewAllRepos ? 999 : 3).map(repo => (
             <Column key={repo.name} spread={4}>
-              <Card
-                height="230px"
-                overrides={{
-                  Card: {
-                    Content: {
-                      css: {
-                        root: {
-                          height: '100%',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          justifyContent: 'space-between'
-                        }
-                      }
-                    }
-                  }
-                }}
-              >
+              <ProjectCard>
                 <Box>
                   <Text fontWeight="semibold" fontSize="300">
                     {repo.name}
@@ -60,7 +60,7 @@ export default function ProjectsSection(props) {
                     </Link>
                   </Box>
                 </Box>
-              </Card>
+              </ProjectCard>
             </Column>
           ))}
         </Columns>

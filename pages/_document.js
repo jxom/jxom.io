@@ -1,6 +1,6 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import { extractCritical } from 'emotion-server';
+import { extractCritical } from 'bumbag-server';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {

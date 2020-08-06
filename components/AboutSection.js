@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Heading, Icon, Stack, Link, Paragraph, Set, fontSize, palette, styled } from 'fannypack';
+import { Box, Container, Heading, Icon, Stack, Link, Paragraph, Set, fontSize, palette, styled } from 'bumbag';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
@@ -51,8 +51,8 @@ export default function About() {
           in my spare time. You
           {"'"}
           ll probably find me working on{' '}
-          <Link href="https://v5.fannypack.style" target="_blank" rel="noreferrer noopener">
-            Fannypack
+          <Link href="https://bumbag.style" target="_blank" rel="noreferrer noopener">
+            Bumbag
           </Link>
           , a React UI Kit, which actually this site was made with.
         </Paragraph>

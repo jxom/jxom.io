@@ -1,15 +1,15 @@
 import * as React from 'react';
 import NextApp from 'next/app';
 import Head from 'next/head';
-import { Provider as FannypackProvider, css, breakpoint, palette } from 'fannypack';
+import { Provider as BumbagProvider, css, breakpoint, palette } from 'bumbag';
 
 const theme = {
   breakpoints: {
     mobile: 480
   },
   global: {
-    css: {
-      root: css`
+    styles: {
+      base: css`
         html,
         body {
           background-color: #cfebff;
@@ -25,8 +25,8 @@ const theme = {
     }
   },
   Heading: {
-    css: {
-      root: styleProps => css`
+    styles: {
+      base: styleProps => css`
         font-family: 'Roboto Slab', sans-serif;
 
         ${breakpoint(
@@ -38,16 +38,16 @@ const theme = {
       `
     },
     h1: {
-      css: {
-        root: css`
+      styles: {
+        base: css`
           font-size: 2.5rem;
         `
       }
     }
   },
   Link: {
-    css: {
-      root: styleProps => css`
+    styles: {
+      base: styleProps => css`
         text-decoration: none;
 
         &:hover {
@@ -63,13 +63,13 @@ export default class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <FannypackProvider theme={theme}>
+      <BumbagProvider theme={theme}>
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet" />
           <title>Jake Moxey</title>
         </Head>
         <Component {...pageProps} />
-      </FannypackProvider>
+      </BumbagProvider>
     );
   }
 }

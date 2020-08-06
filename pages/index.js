@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Stack } from 'fannypack';
+import { Container, Stack } from 'bumbag';
 import { GraphQLClient } from 'graphql-request';
 
 import AboutSection from '../components/AboutSection';

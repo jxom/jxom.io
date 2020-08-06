@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Card, Columns, Column, Container, Heading, Image, Stack, Text } from 'fannypack';
+import { Box, Card, Columns, Column, Container, Heading, Image, Stack, Text } from 'bumbag';
 
 export default function ExperienceSection() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Heading, Stack, Link, List } from 'fannypack';
+import { Container, Heading, Stack, Link, List } from 'bumbag';
 
 export default function TalksSection() {
   return (
