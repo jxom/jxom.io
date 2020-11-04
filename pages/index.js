@@ -7,7 +7,7 @@ import ExperienceSection from '../components/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection';
 import TalksSection from '../components/TalksSection';
 
-Index.getInitialProps = async () => {
+export async function getServerSideProps() {
   const client = new GraphQLClient('https://api.github.com/graphql', {
     headers: {
       authorization: `Bearer ${process.env.GITHUB_TOKEN}`
@@ -40,13 +40,13 @@ Index.getInitialProps = async () => {
     }
   `);
   const repos = reposResponse.user.repositories.edges.map(edge => edge.node);
-  return { repos };
+  return { props: { repos } };
 };
 
 export default function Index(props) {
   const { repos } = props;
   return (
-    <Container isLayout fontSize={{ default: '400', mobile: '300' }}>
+    <Container isLayout>
       <Stack spacing="major-8" paddingY="major-6">
         <AboutSection />
         <ExperienceSection />

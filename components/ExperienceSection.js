@@ -57,7 +57,7 @@ export default function ExperienceSection() {
                   </Text>
                   <br />
                   <Text color="text200" fontSize="150">
-                    DEC 2014 - FEB 2015
+                    DEC 2014 - AUG 2015
                   </Text>
                 </Box>
               </Stack>

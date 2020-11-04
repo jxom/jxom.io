@@ -15,7 +15,7 @@ const SocialIconLink = styled(Link)`
 export default function About() {
   return (
     <Container breakpoint="tablet">
-      <Stack spacing="major-2">
+      <Stack>
         <Set justifyContent="space-between" width="100%">
           <Box>
             <Heading marginBottom="0">
@@ -34,8 +34,8 @@ export default function About() {
             </SocialIconLink>
           </Set>
         </Set>
-        <Paragraph>I am a web engineer who cares about accessible, performant, functional user experiences.</Paragraph>
-        <Paragraph>
+        <Paragraph fontSize={{ default: '400', mobile: '300' }}>I am a web engineer who cares about accessible, performant, functional user experiences.</Paragraph>
+        <Paragraph fontSize={{ default: '400', mobile: '300' }}>
           I am currently working on{' '}
           <Link href="https://medipass.com.au" target="_blank" rel="noreferrer noopener">
             Medipass
@@ -43,7 +43,7 @@ export default function About() {
           , a health claiming and payments platform enabling health providers to spend less time managing payments, and
           more time seeing patients.
         </Paragraph>
-        <Paragraph>
+        <Paragraph fontSize={{ default: '400', mobile: '300' }}>
           You can find me working on{' '}
           <Link href="https://github.com/jxom" target="_blank" rel="noreferrer noopener">
             open-source
@@ -56,7 +56,7 @@ export default function About() {
           </Link>
           , a React UI Kit, which actually this site was made with.
         </Paragraph>
-        <Paragraph>
+        <Paragraph fontSize={{ default: '400', mobile: '300' }}>
           When I{"'"}m not coding, and just wanna chill out, you can find me heading to a{' '}
           <Link href="https://youtu.be/43IcUCIHhQk?t=30" target="_blank" rel="noreferrer noopener">
             festival of sorts

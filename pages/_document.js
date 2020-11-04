@@ -1,25 +1,34 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import { extractCritical } from 'bumbag-server';
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { extractCritical } from 'bumbag-server'
+import { InitializeColorMode } from 'bumbag'
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    const page = renderPage();
-    const styles = extractCritical(page.html);
-    return { ...page, ...styles };
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx)
+    const styles = extractCritical(initialProps.html)
+    return {
+      ...initialProps,
+      styles: (
+        <>
+          {initialProps.styles}
+          <style
+            data-emotion-css={styles.ids.join(' ')}
+            dangerouslySetInnerHTML={{ __html: styles.css }}
+          />
+        </>
+      ),
+    }
   }
-
   render() {
     return (
-      <html lang="en">
-        <Head>
-          <style data-emotion-css={this.props.ids.join(' ')} dangerouslySetInnerHTML={{ __html: this.props.css }} />
-        </Head>
+      <Html>
+        <Head />
         <body>
+          <InitializeColorMode />
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

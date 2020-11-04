@@ -49,6 +49,7 @@ const theme = {
     styles: {
       base: styleProps => css`
         text-decoration: none;
+        font-weight: 500;
 
         &:hover {
           color: ${palette('primary')(styleProps)};
@@ -63,7 +64,7 @@ export default class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <BumbagProvider theme={theme}>
+      <BumbagProvider isSSR theme={theme}>
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet" />
           <title>Jake Moxey</title>
