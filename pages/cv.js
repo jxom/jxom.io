@@ -1,9 +1,9 @@
 import React from 'react';
 import { Avatar, Box, Heading, Link, List, Icon, Paragraph, Stack, Text } from 'bumbag';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+import { faEnvelope } from '@fortawesome/pro-solid-svg-icons/faEnvelope';
+import { faGlobe } from '@fortawesome/pro-solid-svg-icons/faGlobe';
+import { faGithub } from '@fortawesome/fontawesome-free-brands/faGithub';
+import { faTwitter } from '@fortawesome/fontawesome-free-brands/faTwitter';
 
 export default function CV(props) {
   return (

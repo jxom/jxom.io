@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Card, Columns, Column, Container, Heading, Icon, Stack, Link, Text, applyTheme } from 'bumbag';
-import { faStar } from '@fortawesome/free-solid-svg-icons/faStar';
+import { faStar } from '@fortawesome/pro-solid-svg-icons/faStar';
 
 const ProjectCard = applyTheme(Card, {
   Content: {

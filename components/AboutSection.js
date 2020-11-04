@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Container, Heading, Icon, Stack, Link, Paragraph, Set, fontSize, palette, styled } from 'bumbag';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faTwitter } from '@fortawesome/fontawesome-free-brands/faTwitter';
+import { faGithub } from '@fortawesome/fontawesome-free-brands/faGithub';
 
 const SocialIconLink = styled(Link)`
   color: ${palette('text')};
