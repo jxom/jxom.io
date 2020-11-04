@@ -111,112 +111,165 @@ export default function CV(props) {
           </Stack>
         </Box>
       </Box>
-      <Box
-        flex="4"
-        backgroundColor="white"
-        minHeight="100vh"
-        paddingY="major-5"
-        paddingX="major-3"
-      >
+      <Box flex="4" backgroundColor="white" minHeight="100vh" paddingY="major-5" paddingX="major-3">
         <Box maxWidth="60ch">
           <Stack spacing="major-6">
             <Stack>
               <Heading use="h2">Professional experience</Heading>
-              <Stack spacing="major-2">
-                <Stack spacing="major-1">
-                  <Text.Block fontWeight="semibold" fontSize="300">
-                    Lead Frontend Engineer
-                  </Text.Block>
-                  <Text.Block fontSize="250" fontWeight="500">
-                    Medipass{' '}
-                    <Text marginLeft="major-1" fontSize="150" color="gray">
-                      Dec 2016 - Present
-                    </Text>
-                  </Text.Block>
+              <Stack spacing="major-6">
+                <Stack spacing="major-3">
+                  <Stack spacing="major-1">
+                    <Text.Block fontWeight="semibold" fontSize="300">
+                      Lead Frontend Engineer
+                    </Text.Block>
+                    <Text.Block fontSize="250" fontWeight="500">
+                      Medipass{' '}
+                      <Text marginLeft="major-1" fontSize="150" color="gray">
+                        Dec 2016 - Present
+                      </Text>
+                    </Text.Block>
+                  </Stack>
+                  <Stack spacing="major-2">
+                    <Text.Block fontWeight="semibold">The stack</Text.Block>
+                    <Text.Block>
+                      JavaScript (ES2020), React, React Native, Redux,{' '}
+                      <Link href="https://github.com/jxom/react-loads" target="_blank" rel="noreferrer noopener">
+                        React Loads
+                      </Link>
+                      ,{' '}
+                      <Link href="https://github.com/bumbag/bumbag-ui" target="_blank" rel="noreferrer noopener">
+                        Bumbag
+                      </Link>{' '}
+                      (w/ Emotion), Flow/TypeScript, Jest, Cypress, Travis, Node, REST, MongoDB, Redis, Java
+                    </Text.Block>
+                  </Stack>
+                  <Stack spacing="major-2">
+                    <Text.Block fontWeight="semibold">Responsibilities</Text.Block>
+                    <List listStyleType="disc" marginLeft="major-4">
+                      <List.Item>
+                        Lead the architecture & infrastructure of the Medipass web portals (React) and tooling since
+                        Medipass’ inception. These portals include the provider, patient & insurer-facing web apps.
+                      </List.Item>
+                      <List.Item>
+                        Adopted a monorepo of config, tooling & components (powered by Lerna & Yarn Workspaces) to power
+                        the internals of the Medipass web apps.
+                      </List.Item>
+                      <List.Item>
+                        Worked tightly with the product & design teams to deliver an effective, but pixel-perfect
+                        product to our customers.
+                      </List.Item>
+                      <List.Item>
+                        Lead the development of Medipass’ Javascript SDK for health software partners to streamline
+                        health claiming & payments for their patients.
+                      </List.Item>
+                      <List.Item>
+                        Created & collaborated on several open-source projects under the Medipass organisation.
+                      </List.Item>
+                      <List.Item>
+                        Worked closely with the design team to adopt Medipass’ design system, powered by the open source
+                        React UI Kit{' '}
+                        <Link href="https://bumbag.style" target="_blank" rel="noopener noreferrer">
+                          Bumbag
+                        </Link>
+                        .
+                      </List.Item>
+                      <List.Item>
+                        Collaborated on Medipass’ API (Node/REST) to develop new capabilities including our automated
+                        Blue/Green web deployments.
+                      </List.Item>
+                      <List.Item>
+                        Collaborated on Medipass’ Mobile App (React Native/Java) to develop new capabilities including
+                        the ability to book an appointment, accept payments, and manage your user profile, and created
+                        an open-source library (React Native Pinch) to help with data fetching w/ SSL pinning.
+                      </List.Item>
+                    </List>
+                  </Stack>
                 </Stack>
-                <List listStyleType="disc" marginLeft="major-4">
-                  <List.Item>
-                    Lead the architecture & infrastructure of the Medipass web portals (React) and tooling since
-                    Medipass’ inception. These portals include the provider, patient & insurer-facing web apps.
-                  </List.Item>
-                  <List.Item>
-                    Adopted a monorepo of config, tooling & components (powered by Lerna & Yarn Workspaces) to power the
-                    internals of the Medipass web apps.
-                  </List.Item>
-                  <List.Item>
-                    Worked tightly with the product & design teams to deliver an effective, but pixel-perfect product to
-                    our customers.
-                  </List.Item>
-                  <List.Item>
-                    Lead the development of Medipass’ Javascript SDK for health software partners to streamline health
-                    claiming & payments for their patients.
-                  </List.Item>
-                  <List.Item>
-                    Created & collaborated on several open-source projects under the Medipass organisation.
-                  </List.Item>
-                  <List.Item>
-                    Worked closely with the design team to adopt Medipass’ design system, powered by the open source
-                    React UI Kit{' '}
-                    <Link href="https://bumbag.style" target="_blank" rel="noopener noreferrer">
-                      Bumbag
-                    </Link>
-                    .
-                  </List.Item>
-                  <List.Item>
-                    Collaborated on Medipass’ API (Node/REST) to develop new capabilities including our automated
-                    Blue/Green web deployments.
-                  </List.Item>
-                  <List.Item>
-                    Collaborated on Medipass’ Mobile App (React Native/Java) to develop new capabilities including the
-                    ability to book an appointment, accept payments, and manage your user profile, and created an
-                    open-source library (React Native Pinch) to help with data fetching w/ SSL pinning.
-                  </List.Item>
-                </List>
+                <Stack spacing="major-3">
+                  <Stack spacing="major-1">
+                    <Text.Block fontWeight="semibold" fontSize="300">
+                      Fullstack Engineer
+                    </Text.Block>
+                    <Text.Block fontSize="250" fontWeight="500">
+                      Localz{' '}
+                      <Text marginLeft="major-1" fontSize="150" color="gray">
+                        Aug 2015 - Dec 2016
+                      </Text>
+                    </Text.Block>
+                  </Stack>
+                  <Stack spacing="major-2">
+                    <Text.Block fontWeight="semibold">The stack</Text.Block>
+                    <Text.Block>JavaScript, React, Redux, Angular</Text.Block>
+                  </Stack>
+                  <Stack spacing="major-2">
+                    <Text.Block fontWeight="semibold">Responsibilities</Text.Block>
+                    <List listStyleType="disc" marginLeft="major-4">
+                      <List.Item>
+                        Lead the development of Localz’ Push Notification web portal (Angular) & Click-and-collect web
+                        portal (React).
+                      </List.Item>
+                      <List.Item>
+                        Collaborated on the Localz Partner web portal (Angular) & Partner API (Node/REST) to implement
+                        new capabilities such as device & beacon management.
+                      </List.Item>
+                    </List>
+                  </Stack>
+                </Stack>
+                <Stack spacing="major-3">
+                  <Stack spacing="major-1">
+                    <Text.Block fontWeight="semibold" fontSize="300">
+                      Frontend Engineer
+                    </Text.Block>
+                    <Text.Block fontSize="250" fontWeight="500">
+                      Suncorp{' '}
+                      <Text marginLeft="major-1" fontSize="150" color="gray">
+                        Dec 2014 - Aug 2015
+                      </Text>
+                    </Text.Block>
+                  </Stack>
+                  <Stack spacing="major-2">
+                    <Text.Block fontWeight="semibold">The stack</Text.Block>
+                    <Text.Block>JavaScript, Angular 1, Java, Springboot, Jenkins</Text.Block>
+                  </Stack>
+                  <Stack spacing="major-2">
+                    <Text.Block fontWeight="semibold">Responsibilities</Text.Block>
+                    <List listStyleType="disc" marginLeft="major-4">
+                      <List.Item>
+                        Worked closely with the business, product & design teams to build the AAMI Customer Hub
+                        (Angular).
+                      </List.Item>
+                      <List.Item>
+                        Developed new capabilities in the Claiming & Quote microservices (Java/Springboot) which powers
+                        the AAMI Customer Hub.
+                      </List.Item>
+                    </List>
+                  </Stack>
+                </Stack>
               </Stack>
-              <Stack spacing="major-2">
-                <Stack spacing="major-1">
+            </Stack>
+            <Stack>
+              <Heading use="h2">Side hustles</Heading>
+              <Stack spacing="major-3">
+                <Stack spacing="major-2">
                   <Text.Block fontWeight="semibold" fontSize="300">
-                    Fullstack Engineer
+                    <Link href="https://mindcellar.co" target="_blank" rel="noreferrer noopener">
+                      Mindcellar
+                    </Link>{' '}
                   </Text.Block>
-                  <Text.Block fontSize="250" fontWeight="500">
-                    Localz{' '}
-                    <Text marginLeft="major-1" fontSize="150" color="gray">
-                      Aug 2015 - Dec 2016
-                    </Text>
+                  <Paragraph>
+                    Mindcellar is a community-based platform that allows you to discover, curate, organise and
+                    internalise knowledge & learnings through domain-specific communities. There is a gap to fill for
+                    discovering new knowledge & learnings with a community backing; and we want to help people learn
+                    better, together.
+                  </Paragraph>
+                </Stack>
+                <Stack spacing="major-2">
+                  <Text.Block fontWeight="semibold">The stack</Text.Block>
+                  <Text.Block>
+                    JavaScript (ES2020), TypeScript, React, <Link href="https://nextjs.org/" target="_blank" rel="noreferrer noopener">Next.js</Link> + <Link href="https://blitzjs.com/" target="_blank" rel="noreferrer noopener">Blitz.js</Link>, GraphQL, Prisma, Postgres, Bumbag (w/
+                    Emotion), <Link href="https://react-query.tanstack.com/" target="_blank" rel="noreferrer noopener">React Query</Link>, Node.js
                   </Text.Block>
                 </Stack>
-                <List listStyleType="disc" marginLeft="major-4">
-                  <List.Item>
-                    Lead the development of Localz’ Push Notification web portal (Angular) & Click-and-collect web
-                    portal (React).
-                  </List.Item>
-                  <List.Item>
-                    Collaborated on the Localz Partner web portal (Angular) & Partner API (Node/REST) to implement new
-                    capabilities such as device & beacon management.
-                  </List.Item>
-                </List>
-              </Stack>
-              <Stack spacing="major-2">
-                <Stack spacing="major-1">
-                  <Text.Block fontWeight="semibold" fontSize="300">
-                    Frontend Engineer
-                  </Text.Block>
-                  <Text.Block fontSize="250" fontWeight="500">
-                    Suncorp{' '}
-                    <Text marginLeft="major-1" fontSize="150" color="gray">
-                      Dec 2014 - Aug 2015
-                    </Text>
-                  </Text.Block>
-                </Stack>
-                <List listStyleType="disc" marginLeft="major-4">
-                  <List.Item>
-                    Worked closely with the business, product & design teams to build the AAMI Customer Hub (Angular).
-                  </List.Item>
-                  <List.Item>
-                    Developed new capabilities in the Claiming & Quote microservices (Java/Springboot) which powers the
-                    AAMI Customer Hub.
-                  </List.Item>
-                </List>
               </Stack>
             </Stack>
             <Stack>
@@ -304,27 +357,16 @@ export default function CV(props) {
               <Stack spacing="major-2">
                 <Text.Block fontWeight="semibold" fontSize="300">
                   React Payment Inputs (
-                  <Link href="https://github.com/jxom/react-loads" target="_blank" rel="noreferrer noopener">
+                  <Link
+                    href="https://github.com/medipass/react-payment-inputs"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     GitHub
                   </Link>
                   )
                 </Text.Block>
                 <Paragraph>A React Hook & Container to help with payment card input fields.</Paragraph>
-              </Stack>
-            </Stack>
-            <Stack>
-              <Heading use="h2">Side hustles</Heading>
-              <Stack spacing="major-2">
-                <Text.Block fontWeight="semibold" fontSize="300">
-                  <Link href="https://mindcellar.co" target="_blank" rel="noreferrer noopener">
-                    Mindcellar
-                  </Link>{' '}
-                </Text.Block>
-                <Paragraph>
-                  Mindcellar is a community-based platform that allows you to discover, curate, organise and internalise
-                  knowledge & learnings through domain-specific communities. There is a gap to fill for discovering new
-                  knowledge & learnings with a community backing; and we want to help people learn better, together.
-                </Paragraph>
               </Stack>
             </Stack>
           </Stack>
