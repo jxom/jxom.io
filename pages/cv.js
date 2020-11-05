@@ -40,7 +40,7 @@ export default function CV(props) {
               <Stack spacing="major-3">
                 <Paragraph>
                   I am a software engineer who cares about accessible, performant, functional, pixel-perfect user
-                  experiences.
+                  experiences. My goal is to create these amazing user experiences without compromising developer experience.
                 </Paragraph>
                 <Paragraph>
                   I am currently working on{' '}
