@@ -37,11 +37,10 @@ export default function About() {
         <Paragraph fontSize={{ default: '400', mobile: '300' }}>I am a web engineer who cares about accessible, performant, functional user experiences.</Paragraph>
         <Paragraph fontSize={{ default: '400', mobile: '300' }}>
           I am currently working on{' '}
-          <Link href="https://medipass.com.au" target="_blank" rel="noreferrer noopener">
-            Medipass
+          <Link href="https://rainbow.me" target="_blank" rel="noreferrer noopener">
+            Rainbow.me
           </Link>
-          , a health claiming and payments platform enabling health providers to spend less time managing payments, and
-          more time seeing patients.
+          , the best cryptowallet at the universe.
         </Paragraph>
         <Paragraph fontSize={{ default: '400', mobile: '300' }}>
           You can find me working on{' '}
